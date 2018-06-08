@@ -23,9 +23,9 @@ class CalendarCards extends Component {
     axios
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${
-          this.props.gAPI
+        this.props.gAPI
         }@group.calendar.google.com/events?maxResults=${
-          this.props.cards
+        this.props.cards
         }&timeMin=${new Date().toISOString()}&singleEvents=true&orderBy=startTime&key=AIzaSyBzI4ZiGVQ-sSX8_R6uwEuz6o30fKogczI`
       )
       .then(res => {
@@ -42,7 +42,7 @@ class CalendarCards extends Component {
             <ul>
               {this.state.cards.map(card => (
                 <li key={card.id}>
-                  <Card card={card} />
+                  <Card card={card} bColor={this.props.bColor} tColor={this.props.tColor} />
                 </li>
               ))}
             </ul>

@@ -9,8 +9,6 @@ function Demo() {
       <h1>React Calendar Cards</h1>
       <CalendarCards
         gAPI="1kl8atmma4oppshf1ffa2h6do4"
-        bColor="red"
-        tColor="black"
         cards="2"
       />
     </div>

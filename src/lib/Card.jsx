@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 const google = window.google;
 
 export default class extends Component {
@@ -20,7 +20,7 @@ export default class extends Component {
   };
 
   geocodeAddress(geocoder, resultsMap) {
-    geocoder.geocode({ address: this.props.card.location }, function(
+    geocoder.geocode({ address: this.props.card.location }, function (
       results,
       status
     ) {
@@ -47,7 +47,7 @@ export default class extends Component {
   }
   render() {
     return (
-      <div className="card">
+      <div className="card" style={{ backgroundColor: `${this.props.bColor}`, color: `${this.props.tColor}` }}>
         <div className="card--text">
           <div className="text--container">
             <div className="text--header">
