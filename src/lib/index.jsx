@@ -39,7 +39,7 @@ class CalendarCards extends Component {
       <div id="eventWrapper">
         <div id="EventCards">
           <div ref="card-wrapper">
-            <ul>
+            <ul style={{ listStyle: 'none' }}>
               {this.state.cards.map(card => (
                 <li key={card.id}>
                   <Card card={card} bColor={this.props.bColor} tColor={this.props.tColor} />
