@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Card from "./Card";
-import axios from "axios";
-import "./styles.css";
+import React, { Component } from 'react';
+import Card from './Card';
+import axios from 'axios';
+import './styles.css';
 
-const Root = "https://www.googleapis.com/calendar/v3/calendars/";
+const Root = 'https://www.googleapis.com/calendar/v3/calendars/';
 const currectDate = new Date().toISOString();
 
 class CalendarCards extends Component {
