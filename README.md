@@ -25,6 +25,11 @@ This is how you call the component without any modifications.
         gAPI="YOUR GOOGLE API KEY HERE"
         cards="1" />
 ```
+
+The outcome will look something like this:
+![dxcaxbeiqv](https://user-images.githubusercontent.com/5354289/36349554-cb25023a-1457-11e8-893f-247212bc2d5a.gif)
+
+
 Please note that you need to specify how many cards you want to display or none will show.
 
 ### Component Options
@@ -37,10 +42,14 @@ We address the background color with `bColor` and text color with `tColor`.
  <CalendarCards
         calID="YOUR CALENDAR ID HERE"
         gAPI="YOUR GOOGLE API KEY HERE"
-        bColor="red"
-        tColor="white"
+        bColor="#d6cc66"
+        tColor="black"
         cards="1" />
 ```
+
+The outcome will look something like this:
+![dxcaxbeiqv](https://user-images.githubusercontent.com/5354289/36349554-cb25023a-1457-11e8-893f-247212bc2d5a.gif)
+
 
 ## Contributing
 
