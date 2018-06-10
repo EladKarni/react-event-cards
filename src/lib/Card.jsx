@@ -2,23 +2,6 @@ import React, { Component } from 'react';
 const google = window.google;
 
 export default class extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      address: "Pittsburgh"
-    };
-  }
-
-  handleSubmit = e => {
-    e.preventDefault();
-
-    this.geocodeAddress(new google.maps.Geocoder(), this.map);
-
-    this.setState({
-      address: ""
-    });
-  };
-
   geocodeAddress(geocoder, resultsMap) {
     geocoder.geocode({ address: this.props.card.location }, function (
       results,
