@@ -13,7 +13,7 @@ In order to get started and use `React-Event-Cards`, you will need a few things:
 To get React-Event-Cards working in your projects, follow these easy steps:
 
 1. Install the component with `npm i --save react-event-cards`
-2. Import the component
+2. Add script tag to html `<script src="https://maps.googleapis.com/maps/api/js?key=[YOUR KEY HERE]" type="text/javascript"></script>`
 3. ?
 4. Profit?!
 
@@ -26,7 +26,6 @@ This is how you call the component without any modifications.
         cards="1" />
 ```
 
-The outcome will look something like this:
 ![dxcaxbeiqv](https://i.imgur.com/sBsFzqw.gif)
 
 
@@ -47,7 +46,6 @@ We address the background color with `bColor` and text color with `tColor`.
         cards="1" />
 ```
 
-The outcome will look something like this:
 ![dxcaxbeiqv](https://i.imgur.com/hWH7d1y.gif)
 
 ## Contributing
