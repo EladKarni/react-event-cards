@@ -4,20 +4,18 @@ This is a simple component that let's you dynamically fetch events from any publ
 
 ## Prerequisites
 
-In order to get started and use `React-Event-Cards`, you will need a few things:
+In order to get started and use `React-Event-Cards`; you will need a few things:
 * A Public Google Calendar & It's `ID`
 * API key/s for Google Maps and Google Calendar
 
 ## Getting started
 
-To get React-Event-Cards working in your projects, follow these easy steps:
+To get `React-Event-Cards` working in your projects, follow these easy steps:
 
 1. Install the component with `npm i --save react-event-cards`
 2. Add script tag to html `<script src="https://maps.googleapis.com/maps/api/js?key=[YOUR KEY HERE]" type="text/javascript"></script>`
-3. ?
-4. Profit?!
 
-This is how you call the component without any modifications.
+To call the component in it's default state (without additional paramaters); 
 
 ```javascript
  <CalendarCards
@@ -33,9 +31,9 @@ Please note that you need to specify how many cards you want to display or none 
 
 ### Component Options
 
-Currently, the `CalenderCards` component can only take 2 additional arguments. One for the background color and another for the text color.
+Currently, the `CalenderCards` component can only take 2 additional arguments, one for the background color and another for the text color.
 
-We address the background color with `bColor` and text color with `tColor`.
+One can alter the background color with `bColor` and the text color with `tColor`.
 
 ```javascript
  <CalendarCards
