@@ -23,10 +23,10 @@ class CalendarCards extends Component {
     axios
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${
-        this.props.gAPI
+        this.props.cal
         }@group.calendar.google.com/events?maxResults=${
         this.props.cards
-        }&timeMin=${new Date().toISOString()}&singleEvents=true&orderBy=startTime&key=AIzaSyBzI4ZiGVQ-sSX8_R6uwEuz6o30fKogczI`
+        }&timeMin=${new Date().toISOString()}&singleEvents=true&orderBy=startTime&key=${this.props.gAPI}`
       )
       .then(res => {
         console.log(res.data.items);
