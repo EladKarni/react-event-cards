@@ -27,7 +27,7 @@ This is how you call the component without any modifications.
 ```
 
 The outcome will look something like this:
-![dxcaxbeiqv](https://user-images.githubusercontent.com/5354289/36349554-cb25023a-1457-11e8-893f-247212bc2d5a.gif)
+![dxcaxbeiqv](https://i.imgur.com/sBsFzqw.gif)
 
 
 Please note that you need to specify how many cards you want to display or none will show.
@@ -48,8 +48,7 @@ We address the background color with `bColor` and text color with `tColor`.
 ```
 
 The outcome will look something like this:
-![dxcaxbeiqv](https://user-images.githubusercontent.com/5354289/36349554-cb25023a-1457-11e8-893f-247212bc2d5a.gif)
-
+![dxcaxbeiqv](https://i.imgur.com/hWH7d1y.gif)
 
 ## Contributing
 
