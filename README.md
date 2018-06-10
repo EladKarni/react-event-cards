@@ -1,6 +1,6 @@
 # React Event Cards
 
-This is a simple component that let's you dynamically fetch events from any public google calendar and display each event as it's own pre-styled event card containing the information from that event. At the button of each card is a google maps (if the event has a location), which will animate to reveal the full map if hovered over or tapped on (mobile supported).
+This is a simple component that let's you dynamically fetch events from any public google calendar and display each event as it's own pre-styled event card containing the information from that event. At the bottom of each card is a Google Map (if the event has a location), which will animate to reveal the full map if hovered over or tapped on (mobile supported).
 
 ## Prerequisites
 
