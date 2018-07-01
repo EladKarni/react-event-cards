@@ -1,36 +1,42 @@
-import React, { Component } from 'react';
-const google = window.google;
+import React, { Component } from 'react'
+const google = window.google
 
 export default class extends Component {
   geocodeAddress(geocoder, resultsMap) {
-    geocoder.geocode({ address: this.props.card.location }, function (
+    geocoder.geocode({ address: this.props.card.location }, function(
       results,
       status
     ) {
-      if (status === "OK") {
-        resultsMap.setCenter(results[0].geometry.location);
+      if (status === 'OK') {
+        resultsMap.setCenter(results[0].geometry.location)
         new google.maps.Marker({
           map: resultsMap,
           position: results[0].geometry.location
-        });
+        })
       } else {
-        alert("Geocode was not successful for the following reason: " + status);
+        alert('Geocode was not successful for the following reason: ' + status)
       }
-    });
+    })
   }
   componentDidMount() {
     this.map = new google.maps.Map(this.refs.map, {
       center: { lat: 40, lng: 79 },
       scrollwheel: false,
       zoom: 14
-    });
-    const geocoder = new google.maps.Geocoder();
+    })
+    const geocoder = new google.maps.Geocoder()
 
-    this.geocodeAddress(geocoder, this.map);
+    this.geocodeAddress(geocoder, this.map)
   }
   render() {
     return (
-      <div className="card" style={{ backgroundColor: `${this.props.bColor}`, color: `${this.props.tColor}` }}>
+      <div
+        className="card"
+        style={{
+          backgroundColor: `${this.props.bColor}`,
+          color: `${this.props.tColor}`
+        }}
+      >
         <div className="card--text">
           <div className="text--container">
             <div className="text--header">
@@ -50,6 +56,6 @@ export default class extends Component {
           <div id="map" ref="map" className="map_canvas map-init" />
         </div>
       </div>
-    );
+    )
   }
 }
