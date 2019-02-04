@@ -1,7 +1,7 @@
 {
   "name": "react-event-cards",
   "version": "0.1.4",
-  "description": "A simple component that let's you create cards for upcoming events from a public Google calendar.",
+  "description": "A simple component that let's you create cards of upcoming events from a public Google calendar.",
   "main": "lib/index.js",
   "scripts": {
     "dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
