@@ -27,7 +27,6 @@ class CalendarCards extends Component {
         }`
       )
       .then(res => {
-        console.log(res.data.items)
         this.setState({ cards: res.data.items })
       })
   }
