@@ -20,7 +20,7 @@ class CalendarCards extends Component {
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${
           this.props.calID
-        }@group.calendar.google.com/events?maxResults=${
+        }/events?maxResults=${
           this.props.cards
         }&timeMin=${new Date().toISOString()}&singleEvents=true&orderBy=startTime&key=${
           this.props.gAPI
